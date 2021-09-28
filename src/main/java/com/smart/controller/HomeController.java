@@ -24,7 +24,7 @@ public class HomeController {
 	}
 	
 	
-	@RequestMapping("/home")
+	@RequestMapping("/")
 	public String home(Model model) {
 		
 		model.addAttribute("title", "Home - SMC");
@@ -36,6 +36,13 @@ public class HomeController {
 		
 		model.addAttribute("title", "About - SMC");
 		return "about";
+	}
+	
+	@RequestMapping("/signup")
+	public String signup(Model model) {
+		
+		model.addAttribute("title", "Signup - SMC");
+		return "signup";
 	}
 	
 	
